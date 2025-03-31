@@ -192,6 +192,7 @@ jobs:
             rm -rf $workdir/standalone/.next/cache
             ln -sf $basedir/.cache $workdir/standalone/.next/cache
             cd $basedir
+            source ~/.bashrc
             echo $PATH
             pm2 reload ecosystem.config.js --update-env
             rm $workdir/release.zip
